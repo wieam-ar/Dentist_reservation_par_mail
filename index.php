@@ -5,216 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dentist</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* ===== HEADER ===== */
-        header .all {
-            margin-top: 20px;
-            background: rgba(255, 255, 255, 0.027);
-            width: 100%;
-            padding: 6px;
-            border-radius: 50px;
-            backdrop-filter: blur(10px);
-        }
-
-        header .navbar-nav .nav-link {
-            position: relative;
-            font-size: 16px;
-            font-weight: 500;
-            color: #fdfdfd;
-            padding: 10px 15px;
-            transition: color 0.3s ease;
-            overflow: hidden;
-        }
-
-        header .navbar-nav .nav-link::before,
-        header .navbar-nav .nav-link::after {
-            content: '';
-            position: absolute;
-            height: 2px;
-            width: 0;
-            background-color: #ffffff;
-            transition: width 0.4s ease;
-        }
-
-        header .navbar-nav .nav-link::before {
-            top: 0;
-            left: 0;
-        }
-
-        header .navbar-nav .nav-link::after {
-            bottom: 0;
-            right: 0;
-        }
-
-        header .navbar-nav .nav-link:hover::before,
-        header .navbar-nav .nav-link:hover::after {
-            width: 100%;
-        }
-
-        header .navbar-nav .nav-link:hover {
-            color: #0021ff;
-        }
-
-        .header .navbar-brand {
-            color: #ffffff;
-        }
-
-        .titre .navbar-brand {
-            font-size: 38px;
-            color: rgb(235, 235, 235);
-            font-weight: bolder;
-            text-decoration: none;
-        }
-
-        .btn-group {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            white-space: nowrap;
-        }
-
-        .btn-group .btn {
-            color: white;
-            background: #0021ff;
-            padding: 8px 16px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s ease;
-        }
-
-        .btn-group .btn:hover {
-            background: #0017cc;
-            color: #ffffff;
-        }
-
-        /* ===== HERO SECTION ===== */
-        .hero-section {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-            width: 50%;
-            border-radius: 40px;
-            z-index: 2;
-            box-shadow: rgba(252, 252, 252, 0.35) 0px 5px 15px;
-        }
-
-        .centrehero {
-            text-align: center;
-        }
-
-        .centrehero .hero-title {
-            color: white;
-        }
-
-        .centrehero .hero-subtitle {
-            font-size: 20px;
-            color: white;
-        }
-
-        .search-form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50px;
-        }
-
-        form {
-            display: flex;
-            justify-content: space-between;
-            background: rgba(255, 255, 255, 0.027);
-            backdrop-filter: blur(10px);
-            width: fit-content;
-            border-radius: 10px;
-            padding: 10px;
-            gap: 10px;
-            margin-top: 40px;
-            /* instead of 20% */
-        }
-
-        form .btn {
-            background-color: #0021ff;
-            color: white;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 500;
-            border: none;
-            cursor: pointer;
-            padding: 10px 20px;
-            transition: 0.3s ease;
-        }
-
-        form .btn:hover {
-            background-color: #0017cc;
-        }
-
-        /* sectio 2 */
-        .title1 h2 {
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-            font-weight: bolder;
-            font-size: 2.5rem;
-            padding: 10px;
-        }
-
-        .sec2 .paragraphe1 {
-            line-height: 39px;
-        }
-
-        .scroll-wrapper {
-            background: #0a6ebd;
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
-        }
-
-        .scroll-track {
-            display: inline-block;
-            animation: scroll-left 20s linear infinite;
-        }
-
-        .scroll-item {
-            display: inline-block;
-            color: white;
-            font-weight: bold;
-            padding: 10px 20px;
-            font-size: 14px;
-        }
-
-        .scroll-item img {
-            width: 20px;
-            vertical-align: middle;
-            margin-right: 8px;
-        }
-
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-        .title2 h2{
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-            font-weight: bolder;
-            font-size: 2.5rem;
-            padding: 10px;
-        }
-    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/syle.css">
 </head>
 
 <body>
@@ -330,7 +122,7 @@
                 <div class="col-md-12 pt-3">
                     <div class="title1 text-center">
                         <h2 class="About">
-                            About <span class="color" style="color: #0017cc;">Us</span>
+                            About <span class="color" style="color: #0a6ebd;">Us</span>
                         </h2>
                         <span class="line"></span>
                     </div>
@@ -348,7 +140,7 @@
                 <!-- Text Right -->
                 <div class="col-md-6">
                     <p class="paragraphe1">
-                        At <strong><span class="color" style="color: #0017cc;">Dentist</span></strong>,
+                        At <strong><span class="color" style="color: #0a6ebd;">Dentist</span></strong>,
                         we believe that a healthy smile is the foundation of well-being.
                         Our clinic is dedicated to providing high-quality dental care in a warm,
                         comfortable, and welcoming environment. Led by Dr. [Dentist Name],
@@ -401,16 +193,170 @@
                 <div class="col-md-12">
                     <div class="title2">
                         <h2 class=" text-center">
-                            Welcome to <br> The Best 
-                            <span class="color" style="color: #0017cc;">Dental clinic </span>
-                            </h2>
+                            Welcome to <br> The Best
+                            <span class="color" style="color: #0a6ebd;">Dental clinic </span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="stats">
+                        <div class="stat-box">
+                            <h2 class="counter" data-target="900">0</h2>
+                            <p>Ajouter un sous-titre</p>
+                        </div>
+                        <div class="stat-box">
+                            <h2 class="counter" data-target="4500">0</h2>
+                            <p>Ajouter un sous-titre</p>
+                        </div>
+                        <div class="stat-box">
+                            <h2 class="counter" data-target="99.79" data-suffix="%">0</h2>
+                            <p>Ajouter un sous-titre</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
 
     </section>
+    <!-- section 5 -->
 
+    <section id="section3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <h2 class="Reserver text-center">
+                        <img src="./assets/Dentist__2_-removebg-preview.png" alt="teeth" width="50">
+                        Reserver Maintenant
+                    </h2>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 p-0">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/races.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Teeth Braces</h5>
+                            <p class="card-text">
+                                Looking to achieve a perfectly
+                                aligned smile? Our braces specialist offers
+                                advanced orthodontic solutions to help
+                                straighten your teeth comfortably and
+                                effectively.
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-0">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/tarki.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tarkib asnan</h5>
+                            <p class="card-text">Looking to achieve a perfectly
+                                aligned smile? Our braces specialist offers
+                                advanced orthodontic solutions to help
+                                straighten your teeth comfortably and
+                                effectively.
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-0">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/white.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">WhitingTeeth</h5>
+                            <p class="card-text">
+                                Looking to achieve a perfectly
+                                aligned smile? Our braces specialist offers
+                                advanced orthodontic solutions to help
+                                straighten your teeth comfortably and
+                                effectively.
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== MODALS ===== -->
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Teeth Braces</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./assets/races.png" class="img-fluid rounded mb-3" alt="">
+                    <p>Our braces specialist offers advanced orthodontic solutions to help straighten your teeth comfortably and effectively. Perfect for achieving that aligned smile you’ve always wanted!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Tarkib Asnan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./assets/tarki.png" class="img-fluid rounded mb-3" alt="">
+                    <p>Our implants specialist provides durable and natural-looking dental implants that restore both function and aesthetics. Get your confident smile back!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Whiting Teeth</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./assets/white.png" class="img-fluid rounded mb-3" alt="">
+                    <p>Brighten your smile with our professional whitening treatments. Safe, effective, and guaranteed to give you a radiant smile!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
